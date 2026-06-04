@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "restaurantId": 1,
+    "name": "Pizzas Artesanales",
+    "ingredients": "Masa madurada por 48 horas, salsa de tomate San Marzano de la casa, queso mozzarella premium, pepperoni, albahaca fresca.",
+    "price": 12.00,
+    "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=800&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 2,
+    "restaurantId": 1,
+    "name": "Pastas & Comida Italiana",
+    "ingredients": "Fettuccine, espagueti y penne preparados artesanalmente al momento. Salsas Alfredo, Bolognesa y Pesto.",
+    "price": 14.00,
+    "image": "https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=800&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 3,
+    "restaurantId": 1,
+    "name": "Postres por Pedido",
+    "ingredients": "Tiramisú tradicional italiano humedecido con café espresso y panna cotta clásica de frutos rojos.",
+    "price": 5.00,
+    "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=800&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 4,
+    "restaurantId": 1,
+    "name": "PRUEBA",
+    "ingredients": "PRUEBAAA tradicional italiano humedecido con café espresso y panna cotta clásica de frutos rojos.",
+    "price": 5.00,
+    "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=800&auto=format&fit=crop&q=80"
+  },
+    {
+    "id": 5,
+    "restaurantId": 1,
+    "name": "NAPO",
+    "ingredients": "PRUEBAAA tradicional italiano humedecido con café espresso y panna cotta clásica de frutos rojos.",
+    "price": 5.00,
+    "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=800&auto=format&fit=crop&q=80"
+  }
+]

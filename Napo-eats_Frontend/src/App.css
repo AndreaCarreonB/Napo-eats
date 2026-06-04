@@ -1,0 +1,237 @@
+/* <<<<<<<< HOME JSX >>>>>>>  */
+.home__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+.home__container-public {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(3, 1fr));
+  gap: 2.5rem;
+}
+
+.home__card {
+  background: var(--color-bg-variant);
+  padding: 1.2rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.home__card:hover {
+  border-color: var(--color-primary-variant);
+  background: transparent;
+}
+
+.home__image {
+  margin-bottom: 1rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  height: auto;
+  object-fit: contain;
+}
+.home__image-public {
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.home__content {
+  margin: 2rem 0 2.6rem;
+  color: var(--color-light);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .home__container{
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .home__content{
+    width: 80%;
+    margin: 2rem auto 4rem;
+  }
+  .home__content p {
+    margin: 1rem 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home__content {
+    width: 95%;
+    margin: 0 auto 3rem;
+  }
+  .home__content {
+    text-align: center;
+  }
+  .home__content p {
+    margin: 1.5rem 0;
+  }
+}
+
+/* <<<<<<<< LOGIN & REGISTER JSX >>>>>>>  */
+/* Se remueven las dimensiones e interferencias de cuadrícula fijas */
+.container.login__container {
+  width: 100%;
+  display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* <<<<<<<< RESTAURANT JSX >>>>>>>  */
+.restaurant__container{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.restaurant__details{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.menu__items{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  padding: 2rem;
+}
+.restaurant__image {
+  margin-bottom: 1rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  height: auto;
+  object-fit: contain;
+}
+.item__image {
+  margin-bottom: 1rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  height: auto;
+  object-fit: contain;
+}
+
+.restaurant__cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  padding: 1rem;
+  margin: 1rem 1rem;
+  justify-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .restaurant__container{
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .restaurant__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .restaurant__details {
+    margin-right: 2rem;
+  }
+
+  .restaurant__container > div {
+    padding: 2rem 2rem;
+    width: 16rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant__cta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    margin: 1rem;
+    gap: 1.5rem;
+  }
+
+  .restaurant__image {
+    height: 20vh;
+    width: 28vh;
+  }
+}
+
+/* <<<<<<<< FAVORITE JSX >>>>>>>  */
+.favorite__container {
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  justify-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .favorite__container{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .favorite-data-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+    gap: 1rem;
+    justify-items: center;
+    margin: 4rem 0 4rem 0;
+  }
+}
+
+/* <<<<<<<< NAVBAR JSX >>>>>>>  */
+#mainNavigation a {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+.img__logo {
+  display: grid;
+  align-items: center;
+  width: 20%;
+  object-fit: cover;
+}
+
+.dropdown-menu {
+  background: #03727d;
+}
+a.dropdown-toggle {
+  color: #dfdfdf !important;
+}
+a.dropdown-item:hover {
+  color: #03727d !important;
+}
+.nav-item a{
+  color: #dfdfdf;
+}
+.nav-item a:hover {
+  color: #fff;
+}
+.nav-item{
+  min-width: 12vw;
+}
+
+/* Corregida la altura fantasma y removidos los gradientes que daban la franja roja */
+#mainNavigation {
+  position: relative;
+  width: 100%;
+  z-index: 123;
+}
+
+#navbarNavDropdown.collapsing .navbar-nav,
+#navbarNavDropdown.show .navbar-nav{
+  background: #037582;
+  padding: 12px;
+}
